@@ -1,4 +1,4 @@
-from TiendaNube import Actions
+from Extract import Actions
 # from ETL.Transform import Transform
 
 action = Actions()

@@ -2,7 +2,7 @@ import pandas as pd
 from datetime import date
 import os
 import shutil
-from Localizadores import Transform
+from Locators import Transform
 
 paths = Transform()
 

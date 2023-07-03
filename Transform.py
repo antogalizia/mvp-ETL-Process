@@ -1,6 +1,6 @@
 import os
 import shutil
-from Localizadores import Transform
+from Locators import Transform
 
 # storage() is a function that takes the sales.csv file and moves it to the root directory of my project
 def storage():

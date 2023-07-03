@@ -1,7 +1,7 @@
 import time
 from selenium import webdriver
-from ETL.Localizadores import Login
-from ETL.Localizadores import Home
+from Locators import Login
+from Locators import Home
 import os
 
 
