@@ -9,12 +9,13 @@ driver = webdriver.Chrome()
 driver.maximize_window()
 driver.get("https://www.tiendanube.com/")
 
-
 login = Login()
 access = Home()
 
-# Log In
+
 class Actions:
+
+    # Log In
 
     @staticmethod
     def account():
@@ -37,8 +38,7 @@ class Actions:
         enter.click()
         time.sleep(5)
 
-
-# Sales access
+    # Sales access
 
     @staticmethod
     def sales_access():

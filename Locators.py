@@ -1,3 +1,5 @@
+import os
+
 
 class Login:
     login_button = "//body/div[3]/div[1]/div[1]/nav[1]/div[2]/div[2]/ul[1]/span[1]/a[1]"
@@ -16,11 +18,9 @@ class Home:
     export = "//input[@id='submit-job']"
 
 
-class Transform:
-    origin = r"C:\Users\galiz\Downloads\ventas.csv"
-    destiny = r"C:\Users\galiz\Desktop\Personal\Automation\ETL\Downloads"
-
-
-
+class Directories:
+    origin = os.environ.get(r"origin_dir")
+    project_destiny = os.environ.get(r"destiny_dir_project")
+    csv_file_path = os.environ.get(r"file")
 
 

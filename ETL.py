@@ -1,14 +1,16 @@
 from Extract import Actions
-# from ETL.Transform import Transform
+from Storage import Storage
 
+storage = Storage()
 action = Actions()
 
-def filtering():
+def extract():
 
     action.account()
     action.sales_access()
+    storage.store()
 
 
-filtering()
+extract()
 
 
