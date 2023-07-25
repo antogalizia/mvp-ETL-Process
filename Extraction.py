@@ -13,7 +13,7 @@ login = Login()
 access = Home()
 
 
-class Actions:
+class Extraction:
 
     # Log In
 
@@ -26,6 +26,7 @@ class Actions:
         tn_password = os.environ.get("TN_PASSWORD")
         user = os.environ.get("USER")
 
+        time.sleep(5)
         log = driver.find_element("xpath", login_button)
         log.click()
         email = driver.find_element("id", email_button)
