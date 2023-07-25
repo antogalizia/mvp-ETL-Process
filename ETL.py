@@ -1,16 +1,24 @@
-from Extract import Actions
+from Extraction import Extraction
 from Storage import Storage
+from Transformation import Transformation
 
 storage = Storage()
-action = Actions()
+extraction = Extraction()
+transformation = Transformation()
 
-def extract():
+def etl():
 
-    action.account()
-    action.sales_access()
+    extraction.account()
+    extraction.sales_access()
     storage.store()
+    transformation.cleaning()
+    transformation.rename()
 
 
-extract()
+etl()
+
+
+
+
 
 
