@@ -36,7 +36,7 @@ class Transformation:
 
         # I rename the file according to the week
         match month_day:
-            case 25:
+            case 7:
                 os.rename("ventas_procesadas.xlsx", "SPW1.xlsx")
             case 14:
                 os.rename("ventas_procesadas.xlsx", "SPW2.xlsx")
