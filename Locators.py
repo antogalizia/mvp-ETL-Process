@@ -19,8 +19,8 @@ class Home:
 
 
 class Directories:
-    origin = os.environ.get(r"origin_dir")
-    project_destiny = os.environ.get(r"destiny_dir_project")
-    csv_file_path = os.environ.get(r"file")
+    origin = os.environ.get(r"ORIGIN_DIR")
+    project_destiny = os.environ.get(r"DESTINY_DIR_PROJECT")
+    csv_file_path = os.environ.get(r"FILE_OUTPUT")
 
 
